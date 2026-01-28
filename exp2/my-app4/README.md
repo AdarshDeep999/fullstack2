@@ -1,16 +1,55 @@
-# React + Vite
+# Experiment 2 (Subpart 4): Responsive Navigation Bar Using Bootstrap (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This experiment demonstrates the creation of a **responsive navigation bar** using **Bootstrap 5** in a **React functional component**.  
+The navigation bar adapts to different screen sizes and collapses into a toggle menu on smaller devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Aim of the Experiment
 
-## React Compiler
+To design and implement a **responsive navigation bar** using Bootstrap in React and understand:
+- Bootstrap Navbar component
+- Responsive collapse behavior
+- Bootstrap utility classes
+- Component-based UI structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧪 Experiment Description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- A dark-themed navigation bar is created using Bootstrap
+- The navbar contains:
+  - Website brand name
+  - Navigation links (Home, About, Services, Contact)
+- On smaller screens:
+  - The navbar collapses
+  - A toggle button (hamburger icon) appears
+- The layout is fully responsive
+
+---
+
+## ✨ Features
+
+- Responsive Bootstrap Navbar
+- Mobile-friendly toggle menu
+- Clean and professional layout
+- React Functional Component
+- Bootstrap utility-based styling
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Bootstrap 5**
+- **JavaScript (ES6)**
+- **HTML / CSS**
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Create React Project
+```bash
+npx create-react-app experiment-2-subpart-4
+cd experiment-2-subpart-4

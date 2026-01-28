@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Attendance Guardian
 
-## Getting Started
+Attendance Guardian is a **frontend-only attendance optimization tool** designed for college students.
+It helps students decide **which classes to attend or skip** while **staying above mandatory attendance limits**, maximizing rest time, and reducing unnecessary campus hours.
 
-First, run the development server:
+The application runs entirely in the browser with **no backend**, and all data is stored locally.
+
+---
+
+## Features
+
+### 1. Attendance-Aware Optimization
+
+* Users enter **classes conducted** and **classes attended** for each subject.
+* Attendance percentage is calculated automatically.
+* The optimizer ensures attendance never falls below subject-specific minimum caps.
+
+### 2. Subject-Specific Attendance Caps
+
+Default caps:
+
+* **75%** for most academic subjects
+* **90%** for Soft Skills
+* **0%** for Major Project (optional)
+
+These rules are enforced during optimization.
+
+### 3. Weekly Timetable Visualization
+
+* Interactive weekly timetable
+* Classes can be marked as **important** for the current week
+* Important classes are always treated as mandatory
+
+### 4. Rest-Optimized Scheduling
+
+The optimizer:
+
+* Prefers late entry or early exit from campus
+* Tries to merge gaps into longer breaks
+* Minimizes scattered idle time
+* Balances risk based on selected mode
+
+### 5. Risk Modes
+
+* **Safe** – Never approaches attendance limits
+* **Balanced** – Moderate flexibility
+* **Aggressive** – Maximizes rest while staying barely above caps
+
+### 6. 3D Classroom Interface
+
+* Interactive classroom scene using Three.js
+* Functional elements mapped to classroom objects:
+
+  * Blackboard → Timetable
+  * Teacher Desk → Attendance Input
+  * Projector → Optimization Output
+  * Door → Settings
+
+### 7. Local-Only Data Storage
+
+* All data is stored in `localStorage`
+* No authentication
+* No backend
+* Fully private
+
+---
+
+## Tech Stack
+
+* **Next.js 16 (App Router)**
+* **React 19**
+* **TypeScript**
+* **Tailwind CSS**
+* **Framer Motion**
+* **Three.js**
+* **@react-three/fiber**
+* **@react-three/drei**
+* **Lucide Icons**
+
+---
+
+## Project Structure
+
+```
+attendance-guardian/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── classroom-scene.tsx
+│   ├── floating-panels.tsx
+│   ├── attendance-panel.tsx
+│   ├── timetable-board.tsx
+│   ├── optimizer-controls.tsx
+│   └── optimization-output.tsx
+│
+├── lib/
+│   ├── attendance-data.ts
+│   └── optimizer.ts
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## Installation & Setup
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Open in browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## How Attendance Calculation Works
 
-To learn more about Next.js, take a look at the following resources:
+For each subject:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+attendance % = (attended / conducted) × 100
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+When a class is skipped:
 
-## Deploy on Vercel
+* Conducted increases by 1
+* Attended remains the same
+* Optimizer checks if skipping violates the subject’s attendance cap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Only classes that keep attendance **above the cap** are marked flexible.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Optimization Logic Summary
+
+* Anchor classes:
+
+  * Important classes
+  * Classes that cannot be skipped without violating caps
+* Flexible classes:
+
+  * Skippable without violating attendance rules
+* Weekly rest is calculated from:
+
+  * Late entry
+  * Early exit
+  * Reduced mid-day gaps
+
+---
+
+## Limitations
+
+* No backend or multi-user support
+* Timetable is static (manual edits required for changes)
+* Does not account for future extra classes or cancellations
+
+---
+
+## Intended Use
+
+This project is intended for:
+
+* Academic frontend projects
+* UI/UX experimentation
+* Personal attendance planning
+
+It does **not** encourage violating institutional rules.
+
+---
+
+## License
+
+This project is for educational use only.
