@@ -1,14 +1,14 @@
+import React from "react";
+
 function App() {
   return (
     <>
-      {/* =======================
-          NAVIGATION BAR
-      ======================= */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            My Website
+          <a className="navbar-brand fw-bold" href="#">
+            MyWebsite
           </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -21,38 +21,25 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  Home
-                </a>
+                <a className="nav-link active" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  About
-                </a>
+                <a className="nav-link" href="#">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Services
-                </a>
+                <a className="nav-link" href="#">Services</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact
-                </a>
+              <li className="nav-link">
+                <a className="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      {/* =======================
-          MAIN CONTENT
-      ======================= */}
-      <div className="container content">
-        <h2>Responsive Navigation Bar</h2>
-        <p>
-          Hello..! Welcome to the subpart-4 of Experiment no. 2
-        </p>
+      <div className="container text-center mt-5">
+        <h2>Responsive Navigation Bar Using Component Library</h2>
+        <p>Resize screen to test responsiveness</p>
       </div>
     </>
   );
