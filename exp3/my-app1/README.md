@@ -28,4 +28,4 @@ This project demonstrates **client-side routing in React** using **React Router 
 
 ## 📂 Project Structure
 
-![ss](fullstack\exp3\my-app1\Screenshot 2026-02-02 124756.png)
+![ss](https://github.com/AdarshDeep999/fullstack2/blob/75ed7c88ffc7f54f170b70fc6733297c3d75860a/exp3/my-app1/Screenshot%202026-02-02%20124756.png)
