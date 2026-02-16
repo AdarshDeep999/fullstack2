@@ -38,3 +38,6 @@ src/
  ├── Home.jsx
  └── context/
       └── ThemeContext.jsx
+
+![light](https://github.com/AdarshDeep999/fullstack2/blob/a144fbe017b5af2515b7afcb3162f6021689732e/exp4/my-app1/screenshots/light.png)
+![dark](https://github.com/AdarshDeep999/fullstack2/blob/a144fbe017b5af2515b7afcb3162f6021689732e/exp4/my-app1/screenshots/dark.png)

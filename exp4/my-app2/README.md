@@ -49,4 +49,4 @@ src/
        └── counter/
              └── counterSlice.js
 
-![counter](fullstack\exp4\my-app2\screenshots\cntr.png)
+![counter](https://github.com/AdarshDeep999/fullstack2/blob/a144fbe017b5af2515b7afcb3162f6021689732e/exp4/my-app2/screenshots/cntr.png)
