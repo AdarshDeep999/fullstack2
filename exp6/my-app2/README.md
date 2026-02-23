@@ -34,6 +34,6 @@ src/
 ├── App.css
 └── main.jsx
 
-![ui](.\screenshots\ui.png)
-![fail](.\screenshots\fail.png)
-![pass](.\screenshots\pass.png)
+![ui](./screenshots/ui.png)
+![fail](./screenshots/fail.png)
+![pass](./screenshots/pass.png)
