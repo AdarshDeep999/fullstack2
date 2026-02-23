@@ -39,7 +39,7 @@ function App() {
 
     if (Object.keys(newErrors).length === 0) {
       alert(
-        ` Form Submitted Successfully!\n\nEmail: ${email}\nPassword: ${password}`
+        ` Form Submitted Successfully! `
       );
 
       setEmail("");
@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="container">
       <div className="card">
-        <h2>Client-Side Form Validation</h2>
+        <h2>Form Validation</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label>Email ID</label>
