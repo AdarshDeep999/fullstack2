@@ -35,62 +35,32 @@ CREATE DATABASE fullstack;
 
 
 
----
-
-## Table Creation
-A table named **student** was created.
-
-CREATE TABLE student (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100)
-);
-
-Table Structure:
-<img width="1015" height="566" alt="Screenshot 2026-03-23 103644" src="https://github.com/user-attachments/assets/745c77d7-51bc-4514-b91a-8c097588956b" />
-
-
-
 
 ## CRUD Operations
-<img width="203" height="121" alt="Screenshot 2026-03-23 102859" src="https://github.com/user-attachments/assets/2238d05e-fef6-41f8-b50f-fb3077e6fc6c" />
 
 ### CREATE (POST)
-POST http://localhost:8080/api/students  
+POST http://localhost:8081/api/students  
 
-<img width="1266" height="700" alt="Screenshot 2026-03-23 103055" src="https://github.com/user-attachments/assets/a2395fdf-3e38-42cf-a659-956fe518390d" />
+![POST](https://github.com/AdarshDeep999/fullstack2/blob/068b60716429441de13e91f7757736bec6a81b2f/Screenshot%202026-03-23%20134542.png)
 
 ### READ (GET)
 
 GET ALL:
-GET http://localhost:8080/api/students  
+GET http://localhost:8081/api/students  
 
-<img width="1266" height="806" alt="Screenshot 2026-03-23 103023" src="https://github.com/user-attachments/assets/5f6c5b32-c9cf-4e4c-adab-c96ecc0aa664" />
-
-<img width="435" height="383" alt="Screenshot 2026-03-23 103002" src="https://github.com/user-attachments/assets/c8f06a2e-01fa-4632-8b1e-93c7cef29bba" />
-
-
-<img width="435" height="383" alt="Screenshot 2026-03-23 103002" src="https://github.com/user-attachments/assets/78017dc0-0f92-4404-809b-c8dec49b28e4" />
+![GET](https://github.com/AdarshDeep999/fullstack2/blob/068b60716429441de13e91f7757736bec6a81b2f/Screenshot%202026-03-23%20134629.png)
 
 
 ### UPDATE (PUT)
-PUT http://localhost:8080/api/students/1  
-
-Request Body:
-{
-  "name": "Updated Name",
-  "email": "updated@gmail.com"
-}
-
-<img width="1287" height="638" alt="Screenshot 2026-03-23 103232" src="https://github.com/user-attachments/assets/8453d844-e4b2-423b-8426-5ba7a08f202b" />
+![PUT](https://github.com/AdarshDeep999/fullstack2/blob/068b60716429441de13e91f7757736bec6a81b2f/Screenshot%202026-03-23%20135117.png)
 
 
 ---
 
 ### DELETE (DELETE)
-DELETE http://localhost:8080/api/students/1  
+DELETE http://localhost:8081/api/students/1  
 
-<img width="1270" height="713" alt="Screenshot 2026-03-23 103304" src="https://github.com/user-attachments/assets/1473238e-3919-4645-b5fa-83122cd0e420" />
+![DELETE](https://github.com/AdarshDeep999/fullstack2/blob/068b60716429441de13e91f7757736bec6a81b2f/Screenshot%202026-03-23%20134647.png)
 
 
 ---
