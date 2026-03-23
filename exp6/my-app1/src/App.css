@@ -1,0 +1,109 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e9ecef;
+
+  /* PERFECT CENTER */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* form card */
+.form-card {
+  background: #000;
+  color: white;
+  padding: 30px;
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* inputs */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #111;
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+/* groups */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* radio + checkbox */
+.options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* buttons */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.submit {
+  background: #28a745;
+}
+
+.cancel {
+  background: #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+}
