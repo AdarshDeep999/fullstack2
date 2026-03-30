@@ -175,18 +175,14 @@ Token validity: **1 hour**
 Screenshots:
 ## Screenshots
 
-### 1. Project Running in IntelliJ
 
 ![Project Running](Screenshots/Screenshot%202026-03-30%20135951.png)
 
-### 2. API Endpoint Test
 
 ![API Test](Screenshots/Screenshot%202026-03-30%20140437.png)
 
-### 3. Database Table (Users)
 
 ![Database Users Table](Screenshots/Screenshot%202026-03-30%20140608.png)
 
-### 4. JWT Token Generated
 
 ![JWT Token](Screenshots/Screenshot%202026-03-30%20140854.png)
