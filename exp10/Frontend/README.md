@@ -6,11 +6,8 @@ A real-time chat application built with **Spring Boot** and **React** using WebS
 
 ## 📸 Screenshots
 
-### Chat 1 in Action
-![Home](screenshots/exp10\screenshots\Screenshot 2026-04-17 150503.png)
-
-### Chat 2 in Action
-![Chat](screenshots/exp10\screenshots\Screenshot 2026-04-17 150512.png)
+![Home](screenshots/Screenshot%202026-04-17%20150503.png)
+![Chat](screenshots/Screenshot%202026-04-17%20150512.png)
 
 ---
 
